@@ -48,7 +48,7 @@ This framework delivers maintainable, scalable, and robust automation for critic
 - ExtentReports
 - Chrome, Firefox, Edge Browsers
 1. Clone the repository:  
-git clone https://github.com/MONDALaritra/TTP2SPCRM2535_Flipkart.git
+git clone https://github.com/MONDALaritra/Flipkart-Automation-Testing-Project.git
 
 text
 2. Navigate to the project folder and install dependencies:  
