@@ -42,7 +42,7 @@ public class CartTest extends DriverSetup{
 	        
 	    }
 
-		@Test(priority=2)
+		@Test(priority=3)
 	    public void removeItemAndConfirm(){
 			test = extent.createTest("Automate test: Remove item from cart and confirm removal");
 	        CartPage cartPage = new CartPage(driver);
@@ -51,7 +51,7 @@ public class CartTest extends DriverSetup{
 	    }
 	 	
 	 	
-	    @Test(priority=3)
+	    @Test(priority=2)
 	    public void proceedToBuyAndCheckAddressPaymentPage() {
 	    	test = extent.createTest("Automate test: Proceed to buy and check address/payment page");
 	        CartPage cartPage = new CartPage(driver);

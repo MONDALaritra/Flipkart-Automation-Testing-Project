@@ -51,16 +51,15 @@ public class CartPage {
 	@FindBy(xpath="//*[@id=\"container\"]/div/div[2]/div/div/div[1]/div/div[3]/div/form/button")
 	WebElement placeOrderBtn;
     
-	@FindBy(xpath="//*[@id=\"container\"]/div/div[2]/div/div[1]/div[2]/div/div/div/div[2]/span/span[2]")
-	WebElement address;
+	@FindBy(xpath="//*[@id=\"container\"]/div/div[2]/div/div[1]/div[2]/div/h3/span[2]")
+	WebElement addressHeading;
 	
-	@FindBy(xpath="//*[@id=\"to-payment\"]/button")
-	WebElement continueBtn;
+	
 	
 	@FindBy(xpath="//*[@id=\"container\"]/div/div[1]/div/div/button")
 	WebElement acceptAndContinueBtn;
 	
-	@FindBy(xpath="//*[@id=\"container\"]/div[2]/div/header/div/header/section[2]/section/h5")
+	@FindBy(xpath="//*[@id=\"container\"]/div/div[2]/div/div[1]/div[4]/h3/span[2]")
 	WebElement paymentPageHeading;
 
     public void modifyQuantity() throws InterruptedException {
@@ -77,26 +76,18 @@ public class CartPage {
     	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
     	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"container\"]/div/div[1]/div/div[3]/div/div[1]")));
     	confirmRemoveBtn.click();
-    	try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    	driver.navigate().back();
-    	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"container\"]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button")));
-    	addtoCartBtn.click();
+
     }
 
     public void proceedToBuy() {
     	placeOrderBtn.click();
     	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
-    	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"container\"]/div/div[2]/div/div[1]/div[2]/div/div/div/div[2]/span/span[2]")));
-    	Assert.assertTrue(address.isDisplayed());
-    	continueBtn.click();
-    	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"container\"]/div/div[1]/div/div/button")));
-    	acceptAndContinueBtn.click();
+    	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"container\"]/div/div[2]/div/div[1]/div[2]/div/h3/span[2]")));
+    	
+    	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"container\"]/div/div[2]/div/div[1]/div[4]/h3/span[2]")));
+    	Assert.assertTrue(addressHeading.isDisplayed());
     	Assert.assertTrue(paymentPageHeading.isDisplayed());
+    	driver.navigate().back();
     }
 
    

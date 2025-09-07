@@ -2,6 +2,7 @@ package pages;
 
 import java.util.List;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -16,7 +17,8 @@ public class ProductPage {
 	        PageFactory.initElements(driver, this);
 	  }
 
-
+	
+	
     @FindBy(xpath="//*[@id=\"container\"]/div/div[1]/div/div/div/div/div/div/div/div/div/div[1]/div/div/header/div[1]/div[2]/form/div/div/input")
     WebElement searchBox;
 
@@ -55,9 +57,10 @@ public class ProductPage {
 
    
     public void searchProduct(String productName) {
+    	Actions act = new Actions(driver);
         searchBox.clear();
         searchBox.sendKeys(productName);
-        searchButton.click();
+        act.sendKeys(Keys.ENTER).perform();
     }
 
     public void applyRamFilter(String ram) {

@@ -4,17 +4,15 @@
   <parameter name="browser" value="edge"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.CartTest">
+      <class name="tests.LoginTest">
         <methods>
-          <include name="modifyQuantityAndVerify"/>
-          <include name="tearDownReport"/>
-          <include name="removeItemAndConfirm"/>
-          <include name="setupReport"/>
+          <include name="verifyLoginUIElements"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="proceedToBuyAndCheckAddressPaymentPage"/>
+          <include name="tearDownReport"/>
+          <include name="setupReport"/>
+          <include name="loginWithValidPhoneAndPassword" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- tests.CartTest -->
+      </class> <!-- tests.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -33,12 +33,12 @@ public class ProductTest extends DriverSetup{
 	
 	@DataProvider(name="filters")
 	public Object[][] filterElement(){
-		return new Object[][] {{"Realme",10000,20000,"6"}};
+		return new Object[][] {{"Redmi",10000,20000,"6"}};
 	}
 	
 	@DataProvider(name="sortingCondition")
 	public Object[][] applySorting(){
-		return new Object[][] {{"High to low"},{"Low to high"},{"popularity"}};
+		return new Object[][] {{"popularity"},{"High to low"},{"Low to high"}};
 	}
 	
 	@Test(priority=2 , dataProvider = "itemToSearch")

@@ -38,7 +38,8 @@ public class LoginTest extends DriverSetup{
         loginPage.enterPhoneNumber(phone);
         loginPage.clickLogin();
         if(!loginPage.isLoginErrorDisplayed()) {
-        	Thread.sleep(20000);
+        	driver.navigate().back();
+        	loginPage.closeLoginPopup();
         }
         
     }

@@ -9,7 +9,7 @@ import java.io.IOException;
 public class ConfigLoader {
 	Properties property;
 	
-	ConfigLoader() throws IOException, FileNotFoundException{
+	public ConfigLoader() throws IOException, FileNotFoundException{
 		FileInputStream fis = new FileInputStream("config/config.properties");
 		property = new Properties();
 		property.load(fis);
