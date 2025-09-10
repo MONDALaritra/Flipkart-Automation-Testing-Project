@@ -3,8 +3,10 @@ package tests;
 
 
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+
+import org.testng.annotations.BeforeClass;
+
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -19,7 +21,7 @@ public class CartTest extends DriverSetup{
 		ExtentReports extent;
 	    ExtentTest test;
 		
-		@BeforeTest
+		@BeforeClass
 	    public void setupReport() {
 	        extent = ExtentManager.getInstance();
 	    }
@@ -60,7 +62,7 @@ public class CartTest extends DriverSetup{
 	    }
 
 	   
-	    @AfterTest
+	    @AfterClass
 	    public void tearDownReport() {
 	        extent.flush();
 	    }

@@ -1,8 +1,10 @@
 package tests;
 
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+
+import org.testng.annotations.BeforeClass;
+
 import org.testng.annotations.DataProvider;
 
 import org.testng.annotations.Test;
@@ -24,7 +26,7 @@ public class LoginTest extends DriverSetup{
 		return new Object[][] {{"81010"},{"8101017099"}};
 	}
     
-    @BeforeTest
+    @BeforeClass
     public void setupReport() {
         extent = ExtentManager.getInstance();
     }
@@ -52,7 +54,7 @@ public class LoginTest extends DriverSetup{
         loginPage.loginUiVerification();
     }
     
-    @AfterTest
+    @AfterClass
     public void tearDownReport() {
         extent.flush();
     }

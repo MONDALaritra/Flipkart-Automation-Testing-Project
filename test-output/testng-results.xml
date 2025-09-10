@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+<testng-results ignored="0" total="28" passed="28" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-10T15:55:58 IST" name="Suite" finished-at="2025-09-10T15:56:37 IST" duration-ms="39286">
+  <suite started-at="2025-09-10T16:57:52 IST" name="Suite" finished-at="2025-09-10T16:59:10 IST" duration-ms="78018">
     <groups>
     </groups>
-    <test started-at="2025-09-10T15:55:58 IST" name="Test" finished-at="2025-09-10T15:56:37 IST" duration-ms="39286">
+    <test started-at="2025-09-10T16:57:52 IST" name="edgeTest" finished-at="2025-09-10T16:58:32 IST" duration-ms="39808">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTest@fa4c865]" started-at="2025-09-10T15:55:52 IST" name="setUp" finished-at="2025-09-10T15:55:58 IST" duration-ms="5918" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTest@7817fd62]" started-at="2025-09-10T16:57:52 IST" name="setUp" finished-at="2025-09-10T16:57:56 IST" duration-ms="3890" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.LoginTest@fa4c865]" started-at="2025-09-10T15:55:58 IST" name="setupReport" finished-at="2025-09-10T15:55:58 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.LoginTest@7817fd62]" started-at="2025-09-10T16:57:56 IST" name="setupReport" finished-at="2025-09-10T16:57:57 IST" duration-ms="325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method signature="verifyLoginUIElements()[pri:0, instance:tests.LoginTest@fa4c865]" started-at="2025-09-10T15:55:58 IST" name="verifyLoginUIElements" finished-at="2025-09-10T15:56:00 IST" duration-ms="1593" status="PASS">
+        <test-method signature="verifyLoginUIElements()[pri:0, instance:tests.LoginTest@7817fd62]" started-at="2025-09-10T16:57:57 IST" name="verifyLoginUIElements" finished-at="2025-09-10T16:57:58 IST" duration-ms="1224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginUIElements -->
-        <test-method signature="loginWithValidPhoneAndPassword(java.lang.String)[pri:1, instance:tests.LoginTest@fa4c865]" started-at="2025-09-10T15:56:00 IST" name="loginWithValidPhoneAndPassword" data-provider="phoneNumber" finished-at="2025-09-10T15:56:03 IST" duration-ms="2665" status="PASS">
+        <test-method signature="loginWithValidPhoneAndPassword(java.lang.String)[pri:1, instance:tests.LoginTest@7817fd62]" started-at="2025-09-10T16:57:58 IST" name="loginWithValidPhoneAndPassword" data-provider="phoneNumber" finished-at="2025-09-10T16:58:01 IST" duration-ms="3039" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidPhoneAndPassword -->
-        <test-method signature="loginWithValidPhoneAndPassword(java.lang.String)[pri:1, instance:tests.LoginTest@fa4c865]" started-at="2025-09-10T15:56:03 IST" name="loginWithValidPhoneAndPassword" data-provider="phoneNumber" finished-at="2025-09-10T15:56:07 IST" duration-ms="4693" status="PASS">
+        <test-method signature="loginWithValidPhoneAndPassword(java.lang.String)[pri:1, instance:tests.LoginTest@7817fd62]" started-at="2025-09-10T16:58:01 IST" name="loginWithValidPhoneAndPassword" data-provider="phoneNumber" finished-at="2025-09-10T16:58:05 IST" duration-ms="4091" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,47 +48,47 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidPhoneAndPassword -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.LoginTest@fa4c865]" started-at="2025-09-10T15:56:37 IST" name="tearDownReport" finished-at="2025-09-10T15:56:37 IST" duration-ms="36" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.LoginTest@7817fd62]" started-at="2025-09-10T16:58:05 IST" name="tearDownReport" finished-at="2025-09-10T16:58:05 IST" duration-ms="466" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@fa4c865]" started-at="2025-09-10T15:56:37 IST" name="tearDown" finished-at="2025-09-10T15:56:38 IST" duration-ms="439" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@7817fd62]" started-at="2025-09-10T16:58:32 IST" name="tearDown" finished-at="2025-09-10T16:58:32 IST" duration-ms="238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginTest -->
       <class name="tests.CartTest">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.CartTest@24313fcc]" started-at="2025-09-10T15:55:58 IST" name="setupReport" finished-at="2025-09-10T15:55:58 IST" duration-ms="375" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.CartTest@544fa968]" started-at="2025-09-10T16:58:19 IST" name="setupReport" finished-at="2025-09-10T16:58:19 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method signature="addToCart()[pri:0, instance:tests.CartTest@24313fcc]" started-at="2025-09-10T15:56:23 IST" name="addToCart" finished-at="2025-09-10T15:56:26 IST" duration-ms="3250" status="PASS">
+        <test-method signature="addToCart()[pri:0, instance:tests.CartTest@544fa968]" started-at="2025-09-10T16:58:19 IST" name="addToCart" finished-at="2025-09-10T16:58:22 IST" duration-ms="3082" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCart -->
-        <test-method signature="modifyQuantityAndVerify()[pri:1, instance:tests.CartTest@24313fcc]" started-at="2025-09-10T15:56:26 IST" name="modifyQuantityAndVerify" finished-at="2025-09-10T15:56:30 IST" duration-ms="4239" status="PASS">
+        <test-method signature="modifyQuantityAndVerify()[pri:1, instance:tests.CartTest@544fa968]" started-at="2025-09-10T16:58:22 IST" name="modifyQuantityAndVerify" finished-at="2025-09-10T16:58:26 IST" duration-ms="4091" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifyQuantityAndVerify -->
-        <test-method signature="proceedToBuyAndCheckAddressPaymentPage()[pri:2, instance:tests.CartTest@24313fcc]" started-at="2025-09-10T15:56:30 IST" name="proceedToBuyAndCheckAddressPaymentPage" finished-at="2025-09-10T15:56:36 IST" duration-ms="5680" status="PASS">
+        <test-method signature="proceedToBuyAndCheckAddressPaymentPage()[pri:2, instance:tests.CartTest@544fa968]" started-at="2025-09-10T16:58:26 IST" name="proceedToBuyAndCheckAddressPaymentPage" finished-at="2025-09-10T16:58:31 IST" duration-ms="4446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- proceedToBuyAndCheckAddressPaymentPage -->
-        <test-method signature="removeItemAndConfirm()[pri:3, instance:tests.CartTest@24313fcc]" started-at="2025-09-10T15:56:36 IST" name="removeItemAndConfirm" finished-at="2025-09-10T15:56:36 IST" duration-ms="557" status="PASS">
+        <test-method signature="removeItemAndConfirm()[pri:3, instance:tests.CartTest@544fa968]" started-at="2025-09-10T16:58:31 IST" name="removeItemAndConfirm" finished-at="2025-09-10T16:58:32 IST" duration-ms="942" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeItemAndConfirm -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.CartTest@24313fcc]" started-at="2025-09-10T15:56:36 IST" name="tearDownReport" finished-at="2025-09-10T15:56:37 IST" duration-ms="670" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.CartTest@544fa968]" started-at="2025-09-10T16:58:32 IST" name="tearDownReport" finished-at="2025-09-10T16:58:32 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
       </class> <!-- tests.CartTest -->
       <class name="tests.ProductTest">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.ProductTest@5e5d171f]" started-at="2025-09-10T15:55:58 IST" name="setupReport" finished-at="2025-09-10T15:55:58 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.ProductTest@3bd82cf5]" started-at="2025-09-10T16:58:05 IST" name="setupReport" finished-at="2025-09-10T16:58:05 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method signature="searchElectronicItem(java.lang.String)[pri:2, instance:tests.ProductTest@5e5d171f]" started-at="2025-09-10T15:56:07 IST" name="searchElectronicItem" data-provider="itemToSearch" finished-at="2025-09-10T15:56:08 IST" duration-ms="261" status="PASS">
+        <test-method signature="searchElectronicItem(java.lang.String)[pri:2, instance:tests.ProductTest@3bd82cf5]" started-at="2025-09-10T16:58:05 IST" name="searchElectronicItem" data-provider="itemToSearch" finished-at="2025-09-10T16:58:06 IST" duration-ms="283" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,7 +99,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchElectronicItem -->
-        <test-method signature="searchElectronicItem(java.lang.String)[pri:2, instance:tests.ProductTest@5e5d171f]" started-at="2025-09-10T15:56:08 IST" name="searchElectronicItem" data-provider="itemToSearch" finished-at="2025-09-10T15:56:09 IST" duration-ms="1822" status="PASS">
+        <test-method signature="searchElectronicItem(java.lang.String)[pri:2, instance:tests.ProductTest@3bd82cf5]" started-at="2025-09-10T16:58:06 IST" name="searchElectronicItem" data-provider="itemToSearch" finished-at="2025-09-10T16:58:08 IST" duration-ms="1838" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,7 +110,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchElectronicItem -->
-        <test-method signature="sortResults(java.lang.String)[pri:3, instance:tests.ProductTest@5e5d171f]" started-at="2025-09-10T15:56:09 IST" name="sortResults" data-provider="sortingCondition" finished-at="2025-09-10T15:56:09 IST" duration-ms="139" status="PASS">
+        <test-method signature="sortResults(java.lang.String)[pri:3, instance:tests.ProductTest@3bd82cf5]" started-at="2025-09-10T16:58:08 IST" name="sortResults" data-provider="sortingCondition" finished-at="2025-09-10T16:58:08 IST" duration-ms="110" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,7 +121,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortResults -->
-        <test-method signature="sortResults(java.lang.String)[pri:3, instance:tests.ProductTest@5e5d171f]" started-at="2025-09-10T15:56:09 IST" name="sortResults" data-provider="sortingCondition" finished-at="2025-09-10T15:56:10 IST" duration-ms="619" status="PASS">
+        <test-method signature="sortResults(java.lang.String)[pri:3, instance:tests.ProductTest@3bd82cf5]" started-at="2025-09-10T16:58:08 IST" name="sortResults" data-provider="sortingCondition" finished-at="2025-09-10T16:58:08 IST" duration-ms="431" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -132,7 +132,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortResults -->
-        <test-method signature="sortResults(java.lang.String)[pri:3, instance:tests.ProductTest@5e5d171f]" started-at="2025-09-10T15:56:10 IST" name="sortResults" data-provider="sortingCondition" finished-at="2025-09-10T15:56:11 IST" duration-ms="607" status="PASS">
+        <test-method signature="sortResults(java.lang.String)[pri:3, instance:tests.ProductTest@3bd82cf5]" started-at="2025-09-10T16:58:08 IST" name="sortResults" data-provider="sortingCondition" finished-at="2025-09-10T16:58:08 IST" duration-ms="372" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -143,7 +143,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortResults -->
-        <test-method signature="applyFilters(java.lang.String,int,int,java.lang.String)[pri:4, instance:tests.ProductTest@5e5d171f]" started-at="2025-09-10T15:56:11 IST" name="applyFilters" data-provider="filters" finished-at="2025-09-10T15:56:21 IST" duration-ms="10013" status="PASS">
+        <test-method signature="applyFilters(java.lang.String,int,int,java.lang.String)[pri:4, instance:tests.ProductTest@3bd82cf5]" started-at="2025-09-10T16:58:08 IST" name="applyFilters" data-provider="filters" finished-at="2025-09-10T16:58:18 IST" duration-ms="9152" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -169,15 +169,189 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applyFilters -->
-        <test-method signature="selectProduct()[pri:5, instance:tests.ProductTest@5e5d171f]" started-at="2025-09-10T15:56:21 IST" name="selectProduct" finished-at="2025-09-10T15:56:23 IST" duration-ms="1950" status="PASS">
+        <test-method signature="selectProduct()[pri:5, instance:tests.ProductTest@3bd82cf5]" started-at="2025-09-10T16:58:18 IST" name="selectProduct" finished-at="2025-09-10T16:58:19 IST" duration-ms="1663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectProduct -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.ProductTest@5e5d171f]" started-at="2025-09-10T15:56:37 IST" name="tearDownReport" finished-at="2025-09-10T15:56:37 IST" duration-ms="32" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.ProductTest@3bd82cf5]" started-at="2025-09-10T16:58:19 IST" name="tearDownReport" finished-at="2025-09-10T16:58:19 IST" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
       </class> <!-- tests.ProductTest -->
-    </test> <!-- Test -->
+    </test> <!-- edgeTest -->
+    <test started-at="2025-09-10T16:58:32 IST" name="chromeTest" finished-at="2025-09-10T16:59:10 IST" duration-ms="38194">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTest@4e3958e7]" started-at="2025-09-10T16:58:32 IST" name="setUp" finished-at="2025-09-10T16:58:35 IST" duration-ms="2672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginUIElements()[pri:0, instance:tests.LoginTest@4e3958e7]" started-at="2025-09-10T16:58:35 IST" name="verifyLoginUIElements" finished-at="2025-09-10T16:58:36 IST" duration-ms="993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUIElements -->
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.LoginTest@4e3958e7]" started-at="2025-09-10T16:58:35 IST" name="setupReport" finished-at="2025-09-10T16:58:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method signature="loginWithValidPhoneAndPassword(java.lang.String)[pri:1, instance:tests.LoginTest@4e3958e7]" started-at="2025-09-10T16:58:36 IST" name="loginWithValidPhoneAndPassword" data-provider="phoneNumber" finished-at="2025-09-10T16:58:39 IST" duration-ms="3014" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[81010]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidPhoneAndPassword -->
+        <test-method signature="loginWithValidPhoneAndPassword(java.lang.String)[pri:1, instance:tests.LoginTest@4e3958e7]" started-at="2025-09-10T16:58:39 IST" name="loginWithValidPhoneAndPassword" data-provider="phoneNumber" finished-at="2025-09-10T16:58:43 IST" duration-ms="3861" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8101017099]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidPhoneAndPassword -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.LoginTest@4e3958e7]" started-at="2025-09-10T16:58:43 IST" name="tearDownReport" finished-at="2025-09-10T16:58:43 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@4e3958e7]" started-at="2025-09-10T16:59:10 IST" name="tearDown" finished-at="2025-09-10T16:59:10 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.CartTest">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.CartTest@1dac5ef]" started-at="2025-09-10T16:58:58 IST" name="setupReport" finished-at="2025-09-10T16:58:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method signature="addToCart()[pri:0, instance:tests.CartTest@1dac5ef]" started-at="2025-09-10T16:58:58 IST" name="addToCart" finished-at="2025-09-10T16:59:01 IST" duration-ms="3076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method signature="modifyQuantityAndVerify()[pri:1, instance:tests.CartTest@1dac5ef]" started-at="2025-09-10T16:59:01 IST" name="modifyQuantityAndVerify" finished-at="2025-09-10T16:59:05 IST" duration-ms="4102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyQuantityAndVerify -->
+        <test-method signature="proceedToBuyAndCheckAddressPaymentPage()[pri:2, instance:tests.CartTest@1dac5ef]" started-at="2025-09-10T16:59:05 IST" name="proceedToBuyAndCheckAddressPaymentPage" finished-at="2025-09-10T16:59:10 IST" duration-ms="4264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceedToBuyAndCheckAddressPaymentPage -->
+        <test-method signature="removeItemAndConfirm()[pri:3, instance:tests.CartTest@1dac5ef]" started-at="2025-09-10T16:59:10 IST" name="removeItemAndConfirm" finished-at="2025-09-10T16:59:10 IST" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeItemAndConfirm -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.CartTest@1dac5ef]" started-at="2025-09-10T16:59:10 IST" name="tearDownReport" finished-at="2025-09-10T16:59:10 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- tests.CartTest -->
+      <class name="tests.ProductTest">
+        <test-method signature="searchElectronicItem(java.lang.String)[pri:2, instance:tests.ProductTest@77f80c04]" started-at="2025-09-10T16:58:43 IST" name="searchElectronicItem" data-provider="itemToSearch" finished-at="2025-09-10T16:58:43 IST" duration-ms="168" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchElectronicItem -->
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.ProductTest@77f80c04]" started-at="2025-09-10T16:58:43 IST" name="setupReport" finished-at="2025-09-10T16:58:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method signature="searchElectronicItem(java.lang.String)[pri:2, instance:tests.ProductTest@77f80c04]" started-at="2025-09-10T16:58:43 IST" name="searchElectronicItem" data-provider="itemToSearch" finished-at="2025-09-10T16:58:47 IST" duration-ms="3757" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mobile phone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchElectronicItem -->
+        <test-method signature="sortResults(java.lang.String)[pri:3, instance:tests.ProductTest@77f80c04]" started-at="2025-09-10T16:58:47 IST" name="sortResults" data-provider="sortingCondition" finished-at="2025-09-10T16:58:47 IST" duration-ms="97" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[popularity]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortResults -->
+        <test-method signature="sortResults(java.lang.String)[pri:3, instance:tests.ProductTest@77f80c04]" started-at="2025-09-10T16:58:47 IST" name="sortResults" data-provider="sortingCondition" finished-at="2025-09-10T16:58:47 IST" duration-ms="352" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[High to low]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortResults -->
+        <test-method signature="sortResults(java.lang.String)[pri:3, instance:tests.ProductTest@77f80c04]" started-at="2025-09-10T16:58:47 IST" name="sortResults" data-provider="sortingCondition" finished-at="2025-09-10T16:58:47 IST" duration-ms="362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Low to high]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortResults -->
+        <test-method signature="applyFilters(java.lang.String,int,int,java.lang.String)[pri:4, instance:tests.ProductTest@77f80c04]" started-at="2025-09-10T16:58:47 IST" name="applyFilters" data-provider="filters" finished-at="2025-09-10T16:58:57 IST" duration-ms="9196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Redmi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20000]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyFilters -->
+        <test-method signature="selectProduct()[pri:5, instance:tests.ProductTest@77f80c04]" started-at="2025-09-10T16:58:57 IST" name="selectProduct" finished-at="2025-09-10T16:58:58 IST" duration-ms="1554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProduct -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.ProductTest@77f80c04]" started-at="2025-09-10T16:58:58 IST" name="tearDownReport" finished-at="2025-09-10T16:58:58 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- tests.ProductTest -->
+    </test> <!-- chromeTest -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -6,8 +6,10 @@ import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+
+import org.testng.annotations.AfterTest;
+
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -17,7 +19,7 @@ public class DriverSetup {
 	protected static WebDriver driver;
 
 	@Parameters("browser")
-    @BeforeSuite
+    @BeforeTest
     public void setUp(String browser) throws FileNotFoundException, IOException {
     	if(browser.equalsIgnoreCase("chrome")) {
     		WebDriverManager.chromedriver().setup();
@@ -32,7 +34,7 @@ public class DriverSetup {
         driver.get(url);
     }
 
-    @AfterSuite
+    @AfterTest
     public void tearDown() {
         if (driver != null) {
             driver.quit();
