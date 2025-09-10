@@ -8,6 +8,7 @@
         <methods>
           <include name="verifyLoginUIElements"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
           <include name="tearDownReport"/>
           <include name="setupReport"/>
           <include name="loginWithValidPhoneAndPassword" invocation-numbers="0 1"/>
