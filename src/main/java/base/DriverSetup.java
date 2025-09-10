@@ -16,8 +16,8 @@ public class DriverSetup {
 
 	protected static WebDriver driver;
 
+	@Parameters("browser")
     @BeforeSuite
-    @Parameters("browser")
     public void setUp(String browser) throws FileNotFoundException, IOException {
     	if(browser.equalsIgnoreCase("chrome")) {
     		WebDriverManager.chromedriver().setup();
