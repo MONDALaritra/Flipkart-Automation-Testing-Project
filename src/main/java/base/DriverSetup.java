@@ -10,6 +10,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterTest;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -20,7 +21,7 @@ public class DriverSetup {
 
 	@Parameters("browser")
     @BeforeTest
-    public void setUp(String browser) throws FileNotFoundException, IOException {
+    public void setUp(@Optional("edge") String browser) throws FileNotFoundException, IOException {
     	if(browser.equalsIgnoreCase("chrome")) {
     		WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
