@@ -36,28 +36,25 @@
 	</dependency>
   </dependencies>
   
-  <build>
-	<plugins>
-	<!--  Compiler plugin  -->
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-compiler-plugin</artifactId>
-			<version>${maven.compiler.plugin.version}</version>
-			<configuration>
-			<release>${maven.compiler.release}</release>
-			</configuration>
-		</plugin>
-		<!--  Surefire plugin to run TestNG tests  -->
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-surefire-plugin</artifactId>
-			<version>3.2.5</version>
-			<configuration>
-			<suiteXmlFiles>
-			<suiteXmlFile>testng.xml</suiteXmlFile>
-			</suiteXmlFiles>
-			</configuration>
-		</plugin>
-	</plugins>
+ <build>
+  <plugins>
+    <!-- Compiler Plugin -->
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.14.0</version>
+    </plugin>
+    <!-- Surefire Plugin to run TestNG tests -->
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+      <version>3.2.5</version>
+      <configuration>
+        <suiteXmlFiles>
+          <suiteXmlFile>testng.xml</suiteXmlFile>
+        </suiteXmlFiles>
+      </configuration>
+    </plugin>
+  </plugins>
 </build>
 </project>
