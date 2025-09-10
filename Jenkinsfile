@@ -14,6 +14,7 @@ pipeline {
         stage('Build & Test') {
             steps {
                 // Run Maven build & tests inside container
+                echo "Running in Docker"
                 sh 'mvn clean test'
             }
         }
