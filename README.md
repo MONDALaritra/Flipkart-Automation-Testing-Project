@@ -13,7 +13,8 @@ This framework delivers maintainable, scalable, and robust automation for critic
 
 ## 🏗️ Architecture Overview
 
-<img width="301" height="811" alt="Screenshot 2025-08-31 103859" src="https://github.com/user-attachments/assets/cd266662-50ac-4e7d-8395-7585ffdbdeeb" />
+
+<img width="301" height="811" alt="Screenshot 2025-08-31 103859" src="https://github.com/user-attachments/assets/e33a0559-1177-47e0-998e-8820d2b92e25" />
 
 
 ## ✅ Test Case Coverage
@@ -78,13 +79,14 @@ text
 - Comprehensive logs generated for every test run.
 - EmailableReport
   
-  <img width="1920" height="1080" alt="Screenshot 2025-08-30 084701" src="https://github.com/user-attachments/assets/a75dd113-4719-4a0b-8db2-8623cbe28616" />
+<img width="1920" height="1080" alt="Screenshot 2025-08-30 084701" src="https://github.com/user-attachments/assets/2d1404d7-126b-466e-859c-94de58c3b289" />
+
 
 - ExtentReport
 
-  <img width="1919" height="1079" alt="Screenshot 2025-08-30 092400" src="https://github.com/user-attachments/assets/c4e7a60b-c23c-4c2d-91d7-0d8f92637a96" />
+<img width="1919" height="929" alt="Screenshot 2025-09-05 122520" src="https://github.com/user-attachments/assets/59dd84a4-195d-4f58-ae11-c699db5a6453" />
 
-  <img width="1920" height="1080" alt="Screenshot 2025-08-30 092410" src="https://github.com/user-attachments/assets/25a51426-d38d-4896-8492-7dfb2e97f742" />
+<img width="1908" height="926" alt="Screenshot 2025-09-06 095939" src="https://github.com/user-attachments/assets/d7cb9ea2-43db-4b79-8f13-2ad5f064cbf7" />
 
 
 
