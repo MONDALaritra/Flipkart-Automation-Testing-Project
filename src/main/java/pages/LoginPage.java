@@ -41,7 +41,7 @@ public class LoginPage {
     	driver.navigate().refresh();
         phoneNumberInput.clear();
         phoneNumberInput.sendKeys(phone);
-        Thread.sleep(2000);
+        
     }
 
     
