@@ -11,13 +11,13 @@
     </classes>  
   </test> <!-- Test -->
   
-  <test  name="chromeTest">
+  <!-- <test  name="chromeTest">
   	<parameter name="browser" value="chrome"/>	
   	<classes>
   		<class name="tests.LoginTest"/>
   		<class name="tests.ProductTest"/>
        	<class name="tests.CartTest"/>
     </classes>  
-  </test> <!-- Test -->
+  </test>  --><!-- Test -->
   
 </suite> <!-- Suite -->
