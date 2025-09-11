@@ -48,7 +48,7 @@ public class ProductTest extends DriverSetup{
 		test = extent.createTest("Automate test: Attempt search without keywords OR Search for an electronic item");
         ProductPage productPage = new ProductPage(driver);
         productPage.searchProduct(item);
-       
+        System.out.println("The search functionality is working fine");
     }
 
     @Test(priority=4, dataProvider="filters")
@@ -60,6 +60,8 @@ public class ProductTest extends DriverSetup{
         productPage.applyPriceFilter(minPrice, maxPrice);
         Thread.sleep(3000);
         productPage.applyRamFilter(RAM);
+        System.out.println("The RAM filter is applying successfully");
+        System.out.println("The price range is applying successfully");
         
     }
 
@@ -68,6 +70,7 @@ public class ProductTest extends DriverSetup{
     	test = extent.createTest("Automate sorting: Results by popularity or price");
         ProductPage productPage = new ProductPage(driver);
         productPage.sortBy(condition);
+        System.out.println("The sorting functionality is working successfully");
     }
 
    
@@ -76,7 +79,7 @@ public class ProductTest extends DriverSetup{
     	test = extent.createTest("Automate test: View product details and check specifications");
     	ProductPage productPage = new ProductPage(driver);
     	productPage.selectAnyProduct();
-    	
+    	System.out.println("Product is being selected based on filter");
     }
     
     @AfterClass

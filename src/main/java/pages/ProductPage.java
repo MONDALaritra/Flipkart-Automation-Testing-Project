@@ -1,5 +1,6 @@
 package pages;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.Keys;
@@ -61,6 +62,7 @@ public class ProductPage {
         searchBox.clear();
         searchBox.sendKeys(productName);
         act.sendKeys(Keys.ENTER).perform();
+        
     }
 
     public void applyRamFilter(String ram) {
@@ -74,6 +76,8 @@ public class ProductPage {
     			break;
     		}
     	}
+    	
+    	
     }
 
     public void applyBrandFilter(String brand) {
@@ -82,6 +86,7 @@ public class ProductPage {
     	if(brandCheckBox.isDisplayed()) {
     		brandCheckBox.click();
     	}
+    	System.out.println("The Brand filter is applying successfully");
     	
     }
 
@@ -106,7 +111,8 @@ public class ProductPage {
     		select1.selectByIndex(4);
     	}
     	
-    	Thread.sleep(2000);
+//    	Thread.sleep(2000);
+    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
     	
     	if(max>=10000 && max<15000) {
     		select2.selectByContainsVisibleText("10000");
@@ -119,6 +125,8 @@ public class ProductPage {
     	}else {
     		select2.selectByContainsVisibleText("30000+");
     	}
+    	
+    	
     }
 
     public void sortBy(String criteria) {
@@ -133,11 +141,14 @@ public class ProductPage {
     	}else {
     		return;
     	}
+    	
+    	
     }
     
     public void selectAnyProduct() {
     	String link = productLink.getAttribute("href");
     	driver.navigate().to(link);
+    	
     }
     
     

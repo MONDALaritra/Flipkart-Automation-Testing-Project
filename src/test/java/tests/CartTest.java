@@ -32,7 +32,7 @@ public class CartTest extends DriverSetup{
 	 		CartPage cartPage = new CartPage(driver);
 	 		cartPage.addToCartProduct();
 			
-			
+			System.out.println("The product is added to cart successfully");
 		}
 	 	
 		@Test(priority=1)
@@ -40,7 +40,7 @@ public class CartTest extends DriverSetup{
 			test = extent.createTest("Automate test: Modify quantity in cart and verify updates");
 	       CartPage cartPage = new CartPage(driver);
 	       cartPage.modifyQuantity();
-	        
+	        System.out.println("The quantity of the product is updated");
 	        
 	    }
 
@@ -49,7 +49,7 @@ public class CartTest extends DriverSetup{
 			test = extent.createTest("Automate test: Remove item from cart and confirm removal");
 	        CartPage cartPage = new CartPage(driver);
 	        cartPage.removeItem();
-	        
+	        System.out.println("The item is removed from the cart successfully");
 	    }
 	 	
 	 	
@@ -58,7 +58,7 @@ public class CartTest extends DriverSetup{
 	    	test = extent.createTest("Automate test: Proceed to buy and check address/payment page");
 	        CartPage cartPage = new CartPage(driver);
 	        cartPage.proceedToBuy();
-	        
+	        System.out.println("The Address page and payment option page is opening successfully");
 	    }
 
 	   

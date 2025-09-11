@@ -35,9 +35,6 @@ public class CartPage {
 	@FindBy(xpath="//*[@id=\"container\"]/div/div[1]/div/div/div[2]")
 	WebElement quantityUpdatePopup;
 	
-	@FindBy(xpath="/html/body/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div[3]/div[2]/div[2]")
-	WebElement removeBtn;
-	
 	@FindBy(xpath="/html/body/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div[3]/div[1]/div/button[2]")
 	WebElement increaseBtn;
 	
@@ -53,7 +50,8 @@ public class CartPage {
     
 	@FindBy(xpath="//*[@id=\"container\"]/div/div[2]/div/div[1]/div[2]/div/h3/span[2]")
 	WebElement addressHeading;
-	
+	@FindBy(xpath="//*[@id=\"container\"]/div/div[2]/div/div/div[1]/div/div[2]/div/div[3]/div[2]/div[2]")
+	WebElement removeBtn;
 	
 	
 	@FindBy(xpath="//*[@id=\"container\"]/div/div[1]/div/div/button")
@@ -66,7 +64,7 @@ public class CartPage {
     	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     	increaseBtn.click();
     	Assert.assertTrue(quantityUpdatePopup.isDisplayed());
-    	Thread.sleep(4000);
+//    	Thread.sleep(4000);
     	
     }
 
@@ -95,6 +93,6 @@ public class CartPage {
 	public void addToCartProduct() throws InterruptedException  {
 		// TODO Auto-generated method stub
 		addtoCartBtn.click();
-		Thread.sleep(3000);
+//		Thread.sleep(3000);
 	}
 }

@@ -43,7 +43,7 @@ public class LoginTest extends DriverSetup{
         	driver.navigate().back();
         	loginPage.closeLoginPopup();
         }
-        
+        System.out.println("Log in module is working");
     }
 	
 
@@ -52,6 +52,7 @@ public class LoginTest extends DriverSetup{
     	test = extent.createTest("Verify presence and functionality of Login UI elements");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.loginUiVerification();
+        System.out.println("All the elements in login page is visible and functional");
     }
     
     @AfterClass

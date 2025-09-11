@@ -29,7 +29,7 @@ public class LoginPage {
     @FindBy(xpath="//*[@id=\"container\"]/div/div[3]/div/div[2]/div/form/div[1]/span[3]/span")
     WebElement loginErrorMessage;
     
-    @FindBy(xpath="/html/body/div[4]/div/span")
+    @FindBy(xpath="//span[text()=\"✕\"]")
 	WebElement loginPopup;
 
     public LoginPage(WebDriver driver) {
