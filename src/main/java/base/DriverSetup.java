@@ -21,12 +21,12 @@ public class DriverSetup {
 
 	@Parameters("browser")
     @BeforeTest
-    public void setUp(@Optional("chrome") String browser) throws FileNotFoundException, IOException {
+    public void setUp(@Optional("edge") String browser) throws FileNotFoundException, IOException {
     	if(browser.equalsIgnoreCase("chrome")) {
     		WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
     	}else if(browser.equalsIgnoreCase("edge")) {
-    		WebDriverManager.edgedriver().setup();
+    		WebDriverManager.edgedriver().clearDriverCache().setup();
             driver = new EdgeDriver();
     	}
         driver.manage().window().maximize();
