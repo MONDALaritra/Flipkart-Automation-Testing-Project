@@ -1,26 +1,20 @@
 pipeline {
-    agent {
-        docker {
-            image 'maven:3.9.6-eclipse-temurin-17'
-        }
-    }
+    agent any  // run on any available Jenkins agent
+    
     stages {
         stage('Checkout') {
             steps {
-                // Pull code from Git
                 checkout scm
             }
         }
         stage('Build & Test') {
             steps {
-                // Run Maven build & tests inside container
-                echo "Running in Docker"
-                sh 'mvn clean test'
+                echo "Running Maven clean test on Jenkins agent"
+                bat 'mvn clean test'  // use 'sh' on Linux agents
             }
         }
-        stage('Report') {
+        stage('Publish Reports') {
             steps {
-                // Archive test results & HTML reports
                 junit '**/target/surefire-reports/*.xml'
                 publishHTML([
                     allowMissing: false,
@@ -31,6 +25,12 @@ pipeline {
                     reportName: 'Extent Report'
                 ])
             }
+        }
+    }
+    post {
+        always {
+            echo 'Cleaning workspace'
+            cleanWs()
         }
     }
 }
