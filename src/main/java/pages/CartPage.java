@@ -25,7 +25,7 @@ public class CartPage {
     }
 	
 	
-	 @FindBy(xpath="//*[@id=\"container\"]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button")
+	 @FindBy(xpath="//button[text()='Add to cart']")
 	 WebElement addtoCartBtn;
    
 
