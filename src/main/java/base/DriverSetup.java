@@ -26,8 +26,8 @@ public class DriverSetup {
     		WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
     	}else if(browser.equalsIgnoreCase("edge")) {
-    		WebDriverManager.edgedriver().setup();
-            driver = new EdgeDriver();
+    		System.setProperty("webdriver.edge.driver", System.getenv("EDGE_DRIVER_PATH"));
+			driver = new EdgeDriver();
     	}
         driver.manage().window().maximize();
         ConfigLoader config = new ConfigLoader();
