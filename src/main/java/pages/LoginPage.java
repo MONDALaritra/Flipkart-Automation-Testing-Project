@@ -64,9 +64,6 @@ public class LoginPage {
     }
     
     public void closeLoginPopup() {
-    	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
-    	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[4]/div/span")));
-    	
     	if(loginPopup.isDisplayed()) {
     		loginPopup.click();
     	}
