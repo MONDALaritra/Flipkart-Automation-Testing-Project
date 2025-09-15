@@ -22,7 +22,7 @@ public class LoginPage {
     WebElement phoneNumberInput;
 
   
-    @FindBy(xpath="//*[@id=\"container\"]/div/div[3]/div/div[2]/div/form/div[3]/button")
+    @FindBy(xpath="//button[text()='Request OTP']")
 	public
     WebElement requestOTPBtn;
 
