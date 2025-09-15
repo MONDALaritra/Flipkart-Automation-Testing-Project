@@ -92,7 +92,9 @@ public class CartPage {
 
 	public void addToCartProduct() throws InterruptedException  {
 		// TODO Auto-generated method stub
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Add to cart']")));
 		addtoCartBtn.click();
-//		Thread.sleep(3000);
+
 	}
 }
