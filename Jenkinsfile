@@ -17,7 +17,7 @@ pipeline {
             steps {
                 junit '**/target/surefire-reports/*.xml'
                 publishHTML([
-                    allowMissing: false,
+                    allowMissing: true,
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
                     reportDir: 'target',
